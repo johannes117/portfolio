@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
-import MobilRightMenuSlider from '@material-ui/core/Drawer'
+import MobilRightMenuSlider from '@material-ui/core/Drawer';
+import Footer from "./Footer";
+import MenuIcon from '@material-ui/icons/Menu';
 import {
     AppBar, 
     Toolbar, 
@@ -14,10 +16,10 @@ import {
     List, 
     Typography, 
     Box,
-    ThemeProvider
+    Button,
+   
 } from '@material-ui/core'
 import {
-    ArrowBack, 
     AssignmentInd,
     Home, 
     Apps, 
@@ -35,15 +37,26 @@ const useStyles = makeStyles(theme=> ({
  avatar: {
      display: "block",
      margin: "0.5rem auto",
-     width: theme.spacing(13),
-     height: theme.spacing(13)
+     width: theme.spacing(12),
+     height: theme.spacing(12)
  },  
+ avatarsmall: {
+    display: "block",
+    margin: "0.5rem auto",
+    width: theme.spacing(6),
+    height: theme.spacing(6),
+    marginRight: theme.spacing(2),
+},  
  listItem: {
     color: "white"
  }, 
  listIcon: {
      color: "#38aecc"
- }
+ }, 
+ button: {
+    
+ },
+
 
 }));
 
@@ -61,8 +74,8 @@ const menuItems = [
     },
     {
         listIcon: <Apps/>,
-        listText: "Portfolio", 
-        listPath: "/portfolio"
+        listText: "Projects", 
+        listPath: "/projects"
     },
     {
         listIcon: <ContactMail/>,
@@ -70,6 +83,7 @@ const menuItems = [
         listPath: "/contacts"
     }
 ]
+
 
 const NavBar = () => {
     const [state, setState] = useState({
@@ -83,9 +97,10 @@ const toggleSlider = (slider, open) => () => {
     const classes = useStyles()
 
     const sideList = slider => (
-        <Box className = {classes.menuSliderContainer} component = "div" onClick={toggleSlider(slider, false)}>
-            <Avatar className={classes.avatar} src={avatar} alt="Johannes du Plessis"/>
-            <Divider />
+        
+        <Box className = {classes.menuSliderContainer} component = "div" onClick={toggleSlider(slider, false)}>    
+           <Avatar className={classes.avatar} src={avatar} alt="Johannes du Plessis" /> 
+            <Divider/>
             <List>
                 {menuItems.map((lsItem, key)=>(
                 <ListItem button key={key} component={Link} to ={lsItem.listPath}>
@@ -103,13 +118,15 @@ const toggleSlider = (slider, open) => () => {
             <AppBar position="static" style={{background: "#183446"}}>
                 <Toolbar>
                     <IconButton onClick={toggleSlider("right", true)}>
-                        <ArrowBack style={{color: "#38aecc" }}/>
+                        <MenuIcon style={{color: "white", fontSize: "40" }}/>
                     </IconButton>
-                        <Typography variant = "h5" style = {{ color: "white"}}>
-                            Portfolio
-                        </Typography>
-                        <MobilRightMenuSlider anchor="right" open={state.right} onClose={toggleSlider("right", false)} >
+                    <Avatar className={classes.avatarsmall} src={avatar} alt="Johannes du Plessis" /> 
+                        <Button className={classes.button} variant = "subtitle1" style = {{color: "white"}} component={Link} to ={"/"}>
+                        Portfolio
+                        </Button>
+                        <MobilRightMenuSlider anchor="left" open={state.right} onClose={toggleSlider("right", false)} >
                             {sideList("right")}
+                            <Footer/>
                         </MobilRightMenuSlider>
                 </Toolbar>
             </AppBar>

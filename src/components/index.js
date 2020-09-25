@@ -32,7 +32,7 @@ const Home = () => {
                         }
                     }, 
                     shape:{
-                        type: "circle", 
+                        type: "triangle", 
                         stoke: {
                             width: 1,
                             color: "#2196F3"

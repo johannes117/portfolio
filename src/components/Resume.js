@@ -2,10 +2,21 @@ import React from 'react'
 import {makeStyles} from "@material-ui/core/styles"
 import {Typography, Box} from "@material-ui/core"
 import Navbar from "./Navbar"
+import Button from '@material-ui/core/Button';
+import CameraIcon from '@material-ui/icons/PhotoCamera';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Grid from '@material-ui/core/Grid';
+import Toolbar from '@material-ui/core/Toolbar';
+import Container from '@material-ui/core/Container';
+import Link from '@material-ui/core/Link';
 
-const useStyles = makeStyles(theme=>({
+const useStyles = makeStyles((theme) => ({
     mainContainer: {
-        background: "#046e8f"
+        background: "#222"
     }, 
     timeLine: {
         position: "relative", 
@@ -24,7 +35,7 @@ const useStyles = makeStyles(theme=>({
             display: "table", 
             clear: "both"
         }, 
-        [theme.breakpoints.up("md")]:{
+        [theme.breakpoints.up("sm")]:{
             padding: "2rem", 
             "&:before":{
                 left: "calc(50% - 1px)",
@@ -49,10 +60,10 @@ const useStyles = makeStyles(theme=>({
             transform: "rotate(45deg)"
         }, 
         "&:after": {
-            content: "' '", 
+            content: "''", 
             position: "absolute"     
          },
-        [theme.breakpoints.up("md")]: {
+        [theme.breakpoints.up("sm")]: {
             width: "44%",
             margin: "1rem",
             "&:ntn-of-type(2n):": {
@@ -79,7 +90,7 @@ const useStyles = makeStyles(theme=>({
         "&:before": {
             display: "none"
         }, 
-        [theme.breakpoints.up("md")]: {
+        [theme.breakpoints.up("sm")]: {
             textAlign: "center", 
             margin: "0 auto", 
             "&:nth-of-type(2n)":{
@@ -101,7 +112,38 @@ const useStyles = makeStyles(theme=>({
         padding: "0",
         textTransform: "uppercase", 
 
-    }
+    }, 
+    icon: {
+        marginRight: theme.spacing(2),
+      },
+      heroContent: {
+        backgroundColor: theme.palette.background.paper,
+        padding: theme.spacing(8, 0, 6),
+      },
+      heroButtons: {
+        marginTop: theme.spacing(4),
+      },
+      cardGrid: {
+        paddingTop: theme.spacing(8),
+        paddingBottom: theme.spacing(8),
+        background: "#222",
+        maxWidth: '100%'
+      },
+      card: {
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+      },
+      cardMedia: {
+        paddingTop: '56.25%', // 16:9
+      },
+      cardContent: {
+        flexGrow: 1,
+      },
+      footer: {
+        backgroundColor: theme.palette.background.paper,
+        padding: theme.spacing(6),
+      },
 }))
 
 const Resume = () => {
@@ -109,19 +151,46 @@ const Resume = () => {
     return (
         <>
         <Navbar/>
+        <div className={classes.heroContent}>
+          <Container maxWidth="sm">
+            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+              Resume
+            </Typography>
+            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+              Something short and leading about the collection below—its contents, the creator, etc.
+              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
+              entirely.
+            </Typography>
+            <div className={classes.heroButtons}>
+              <Grid container spacing={2} justify="center">
+                <Grid item>
+                  <Button variant="contained" color="primary">
+                    Main call to action
+                  </Button>
+                </Grid>
+                <Grid item>
+                  <Button variant="outlined" color="primary">
+                    Secondary action
+                  </Button>
+                </Grid>
+              </Grid>
+            </div>
+          </Container>
+        </div>
+        
         <Box component= "header" className={classes.mainContainer}>
 
             <Typography variant="h4" align="center" className={classes.heading}>
-                Working Experience
+                Work Experience
             </Typography>
 
-            <Box component = "div" className={classes.timeLine}>
+            <Box  className={classes.timeLine}>
 
-            <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+            <Typography variant="h2" className={`${classes.timeLineItem} ${classes.timeLineYear}`}>
                         2019-2020
                 </Typography>
                 
-                <Box component="div" className={classes.timeLineItem}>
+                <Box className={classes.timeLineItem}>
                    
                     <Typography variant="h5" align="center" className={classes.subHeading}>
                         DJ
@@ -137,11 +206,11 @@ const Resume = () => {
                
                 </Box>
                
-                <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                <Typography variant="h2" className={`${classes.timeLineItem} ${classes.timeLineYear}`}>
                         2017-2020
                 </Typography>
                 
-                <Box component="div" className={classes.timeLineItem}>
+                <Box  className={classes.timeLineItem}>
                    
                     <Typography variant="h5" align="center" className={classes.subHeading}>
                         Lifeguard 
@@ -158,11 +227,11 @@ const Resume = () => {
                 </Box>
 
 
-                <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                <Typography variant="h2" className={`${classes.timeLineItem} ${classes.timeLineYear}`}>
                         2017
                 </Typography>
                 
-                <Box component="div" className={classes.timeLineItem}>
+                <Box  className={classes.timeLineItem}>
                    
                     <Typography variant="h5" align="center" className={classes.subHeading}>
                         Delivery Driver
@@ -178,11 +247,11 @@ const Resume = () => {
                
                 </Box>
 
-                <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                <Typography variant="h2" className={`${classes.timeLineItem} ${classes.timeLineYear}`}>
                         2014-2016
                 </Typography>
                 
-                <Box component="div" className={classes.timeLineItem}>
+                <Box  className={classes.timeLineItem}>
                    
                     <Typography variant="h5" align="center" className={classes.subHeading}>
                         Lifeguard
@@ -198,11 +267,11 @@ const Resume = () => {
                
                 </Box>
 
-                <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                <Typography variant="h2" className={`${classes.timeLineItem} ${classes.timeLineYear}`}>
                         2012-2016
                 </Typography>
                 
-                <Box component="div" className={classes.timeLineItem}>
+                <Box  className={classes.timeLineItem}>
                    
                     <Typography variant="h5" align="center" className={classes.subHeading}>
                         Mobile Phone Repairer
@@ -218,11 +287,11 @@ const Resume = () => {
                
                 </Box>
 
-                <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                <Typography variant="h2" className={`${classes.timeLineItem} ${classes.timeLineYear}`}>
                         2012-2016
                 </Typography>
                 
-                <Box component="div" className={classes.timeLineItem}>
+                <Box  className={classes.timeLineItem}>
                    
                     <Typography variant="h5" align="center" className={classes.subHeading}>
                         Crew Member
