@@ -1,22 +1,29 @@
 import React from 'react'
-import {makeStyles} from "@material-ui/core/styles"
+import {makeStyles, withStyles} from "@material-ui/core/styles"
 import {Typography, Box} from "@material-ui/core"
 import Navbar from "./Navbar"
 import Button from '@material-ui/core/Button';
-import CameraIcon from '@material-ui/icons/PhotoCamera';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 
+function Copyright() {
+    return (
+      <Typography variant="body2" color="textSecondary" align="center">
+        {'Copyright © '}
+        <Link color="inherit" href="https://material-ui.com/">
+          Johannes du Plessis
+        </Link>{' '}
+        {new Date().getFullYear()}
+        {'.'}
+      </Typography>
+    );
+  }
+
 const useStyles = makeStyles((theme) => ({
     mainContainer: {
-        background: "#222"
+        background: "#183446"
     }, 
     timeLine: {
         position: "relative", 
@@ -146,6 +153,29 @@ const useStyles = makeStyles((theme) => ({
       },
 }))
 
+const ColorButton = withStyles((theme) => ({
+    root: {
+      color: "white",
+      backgroundColor: "#183446",
+      '&:hover': {
+        color: "#183446",
+        backgroundColor: "#38aecc",
+      },
+    },
+  }))(Button);
+
+  const ColorButton2 = withStyles((theme) => ({
+    root: {
+      color: "#183446",
+      
+      '&:hover': {
+        color: "#38aecc",
+        backgroundColor: "#222",
+        
+      },
+    },
+  }))(Button);
+
 const Resume = () => {
     const classes = useStyles();
     return (
@@ -164,14 +194,14 @@ const Resume = () => {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="primary">
+                  <ColorButton variant="contained" color="primary">
                     Main call to action
-                  </Button>
+                  </ColorButton>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined" color="primary">
+                  <ColorButton2 variant="outlined" color="primary">
                     Secondary action
-                  </Button>
+                  </ColorButton2>
                 </Grid>
               </Grid>
             </div>
@@ -316,6 +346,17 @@ const Resume = () => {
             
 
         </Box>
+        {/* Footer */}
+      <footer className={classes.footer}>
+        <Typography variant="h6" align="center" gutterBottom>
+          Footer
+        </Typography>
+        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
+          Something here to give the footer a purpose!
+        </Typography>
+        <Copyright />
+      </footer>
+      {/* End footer */}
         </>
     )
 }

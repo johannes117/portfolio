@@ -14,7 +14,6 @@ import {
     Avatar, 
     Divider, 
     List, 
-    Typography, 
     Box,
     Button,
    
@@ -51,7 +50,7 @@ const useStyles = makeStyles(theme=> ({
     color: "white"
  }, 
  listIcon: {
-     color: "#38aecc"
+     color: "white"
  }, 
  button: {
     

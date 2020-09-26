@@ -13,8 +13,8 @@ const useStyles = makeStyles((theme) => ({
     },
     button: {
         marginTop: "1rem",
-        color: "tomato",
-        borderColor: "tomato"
+        color: "white",
+        borderColor: "white"
     }
 }));
 
@@ -24,17 +24,17 @@ const InputField = withStyles({
             color: "tomato", 
         }, 
         "& label":{
-            color: "tan",
+            color: "white",
         }, 
         "& .MuiOutlinedInput-root": {
             "$ fieldset": {
-                borderColor: "tan",
+                borderColor: "white",
             }, 
             "&:hover fieldset": {
-                borderColor: "tan",
+                borderColor: "white",
             }, 
             "&.Mui-focused fieldset": {
-                borderColor: "tan",
+                borderColor: "white",
             }
         }
     }, 
@@ -46,11 +46,11 @@ const Contacts = () => {
 
     return (
        
-        <Box component ="div" style={{background: "#233", height: "100vh"}}>
+        <Box component ="div" style={{background: "#222", height: "100vh"}}>
              <Navbar />
            <Grid container justify="center">
                 <Box component="form" className={classes.form}>
-                    <Typography variant="h5" style={{color: "tomato", textAlign: "center", textTransform: "uppercase"}} > Hire or Contact me... </Typography>
+                    <Typography variant="h5" style={{color: "white", textAlign: "center", textTransform: "uppercase"}} > Hire or Contact me... </Typography>
                     <InputField fullWidth = {true} label = "Name" variant= "outlined" inputProps={{style:{color: "white" }}} margin="dense" size="medium"/>
                     <br/>
                     <InputField fullWidth = {true} label = "Email" variant= "outlined" inputProps={{style:{color: "white" }}} margin="dense" size="medium"/>
