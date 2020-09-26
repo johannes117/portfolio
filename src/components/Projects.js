@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(8),
     background: "#222",
-    maxWidth: '100%'
+   
   },
   card: {
     height: '100%',
@@ -62,6 +62,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+  gridcontainer:{
+    maxWidth: "100%",
+    background: "#222"
+  }
 }));
 
 const cards = [
@@ -140,9 +144,10 @@ export default function Album() {
             </div>
           </Container>
           </div>
-        <Container className={classes.cardGrid} maxWidth="md">
+         <Container className={classes.gridcontainer}>
+        <Container className={classes.cardGrid} >
           {/* End hero unit */}
-          <Grid container spacing={4}>
+          <Grid container spacing={4} >
             {cards.map((list, card) => (
               <Grid item key={card} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
@@ -174,6 +179,8 @@ export default function Album() {
             ))}
           </Grid>
         </Container>
+        </Container>
+        
       </main>
       {/* Footer */}
       <footer className={classes.footer}>
