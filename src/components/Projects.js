@@ -71,17 +71,29 @@ const useStyles = makeStyles((theme) => ({
 const cards = [
   {
     listImage: project1,
-    listText: "Title", 
+    listText: "Aerabyte Fitness App", 
+    listHeading: "Aerabyte Fitness App", 
+    listContent: "List Content", 
+    listLink: "https://aerabyte.com",
+    listLink2: "https://github.com/johannes117/Aerabyte"
   
 },
 {
   listImage: project2,
   listText: "Title", 
+  listHeading: "Aerabyte Fitness App", 
+  listContent: "List Content", 
+  listLink: "https://aerabyte.com",
+  listLink2: "https://github.com/johannes117/Aerabyte"
 
 },
 {
   listImage: project3,
   listText: "Title", 
+  listHeading: "Aerabyte Fitness App", 
+  listContent: "List Content", 
+  listLink: "https://aerabyte.com",
+  listLink2: "https://github.com/johannes117/Aerabyte"
 
 },
 ];
@@ -108,6 +120,7 @@ const ColorButton2 = withStyles((theme) => ({
     },
   },
 }))(Button);
+
 
 export default function Album() {
   const classes = useStyles();
@@ -160,18 +173,18 @@ export default function Album() {
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                     {list.listHeading}
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      {list.listContent}
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
-                      View
+                    <Button size="small" color="primary" component={Link} href={list.listLink} target="_blank">
+                      Website
                     </Button>
-                    <Button size="small" color="primary">
-                      Edit
+                    <Button size="small" color="primary" component={Link} href={list.listLink2} target="_blank">
+                      Github
                     </Button>
                   </CardActions>
                 </Card>

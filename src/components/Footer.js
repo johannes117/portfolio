@@ -30,11 +30,10 @@ const Footer = () => {
     return (
         <BottomNavigation width="auto" style={{background: "#222"}}>
             <BottomNavigationAction
-            containerElement={<a href="https://github.com/johannes117"/>}
             className={classes.root}
             style={{padding: 0}}
             icon={<LinkedInIcon/>}
-            
+            component={Link} href={"https://google.com"} target="_blank"
             />
             <BottomNavigationAction
             className={classes.root}
