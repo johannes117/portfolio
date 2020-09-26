@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.2a86ed1c.chunk.css",
+    "main.js": "/portfolio/static/js/main.e22ba0c7.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e22ba0c7.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.aad75174.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.aad75174.js.map",
+    "static/js/2.f3740777.chunk.js": "/portfolio/static/js/2.f3740777.chunk.js",
+    "static/js/2.f3740777.chunk.js.map": "/portfolio/static/js/2.f3740777.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.8c08c9463742a60510d2228da194f4a4.js": "/portfolio/precache-manifest.8c08c9463742a60510d2228da194f4a4.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.2a86ed1c.chunk.css.map": "/portfolio/static/css/main.2a86ed1c.chunk.css.map",
+    "static/js/2.f3740777.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f3740777.chunk.js.LICENSE.txt",
+    "static/media/applewatch1.jpg": "/portfolio/static/media/applewatch1.09323f5e.jpg",
+    "static/media/circle-cropped.png": "/portfolio/static/media/circle-cropped.0d0a996f.png",
+    "static/media/javascript-fullstack.jpg": "/portfolio/static/media/javascript-fullstack.730958a2.jpg",
+    "static/media/mern-stack.jpg": "/portfolio/static/media/mern-stack.90616a5d.jpg",
+    "static/media/App.css": "/portfolio/static/media/playground-07-desktop.2c9a38c2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aad75174.js",
+    "static/js/2.f3740777.chunk.js",
+    "static/css/main.2a86ed1c.chunk.css",
+    "static/js/main.e22ba0c7.chunk.js"
+  ]
+}
