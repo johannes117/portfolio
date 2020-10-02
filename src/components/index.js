@@ -19,7 +19,6 @@ const Home = () => {
         <div>
             <Navbar/>
             <Header/>
-            
             <Particles
             canvasClassName={classes.particlesCanva}
             params={{

@@ -7,14 +7,18 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
-import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import project1 from "../applewatch1.jpg"
-import project2 from "../images/javascript-fullstack.jpg"
-import project3 from "../images/mern-stack.jpg"
+import project2 from "../images/playground-07-desktop.jpg"
+import project3 from "../images/comingsoon.jpg"
+import {BottomNavigation, BottomNavigationAction} from "@material-ui/core";
+import Instagram from "@material-ui/icons/Instagram";
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
 
 
 function Copyright() {
@@ -65,7 +69,21 @@ const useStyles = makeStyles((theme) => ({
   gridcontainer:{
     maxWidth: "100%",
     background: "#222"
+  }, 
+  root: {
+    "& .MuiBottomNavigationAction-root": {
+        minWidth: 0,
+        maxWidth: 250,
+    }, 
+    "& .MuiSvgIcon-root":{
+        fill: "black",
+        "&:hover": {
+            fill:"#38AECC",
+            fontSize: "1.8rem"
+        }
+    }
   }
+
 }));
 
 const cards = [
@@ -80,20 +98,20 @@ const cards = [
 },
 {
   listImage: project2,
-  listText: "Title", 
-  listHeading: "Aerabyte Fitness App", 
+  listText: "Portfolio Website", 
+  listHeading: "React Portfolio Website", 
   listContent: "List Content", 
-  listLink: "https://aerabyte.com",
-  listLink2: "https://github.com/johannes117/Aerabyte"
+  listLink: "https://johannes117.github.io/portfolio/",
+  listLink2: "https://github.com/johannes117/portfolio"
 
 },
 {
   listImage: project3,
   listText: "Title", 
-  listHeading: "Aerabyte Fitness App", 
+  listHeading: "More Projects coming soon...", 
   listContent: "List Content", 
-  listLink: "https://aerabyte.com",
-  listLink2: "https://github.com/johannes117/Aerabyte"
+  listLink: "https://johannes117.github.io/portfolio/",
+  listLink2: "https://github.com/johannes117"
 
 },
 ];
@@ -122,7 +140,7 @@ const ColorButton2 = withStyles((theme) => ({
 }))(Button);
 
 
-export default function Album() {
+export default function Projects() {
   const classes = useStyles();
 
   return (
@@ -137,24 +155,10 @@ export default function Album() {
               Projects
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Something short and leading about the collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-              entirely.
+              Here is where I display all of the projects that I am currently working on or have previously worked on. 
+              Feel free to have a browse, and checkout each project's Github repository!
             </Typography>
-            <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
-                <Grid item>
-                  <ColorButton variant="contained" color="primary">
-                    Main call to action
-                  </ColorButton>
-                </Grid>
-                <Grid item>
-                  <ColorButton2 variant="outlined" color="primary">
-                    Secondary action
-                  </ColorButton2>
-                </Grid>
-              </Grid>
-            </div>
+            
           </Container>
           </div>
          <Container className={classes.gridcontainer}>
@@ -198,14 +202,35 @@ export default function Album() {
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+              "It always seems impossible, until it's done - Nelson Mandela"
         </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
+         Useful Links:
         </Typography>
+        <BottomNavigation width="auto" >
+            <BottomNavigationAction
+            className={classes.root}
+            style={{padding: 0}}
+            icon={<LinkedInIcon/>}
+            component={Link} href={"https://www.linkedin.com/in/johannes117/"} target="_blank"
+            />
+            <BottomNavigationAction
+            className={classes.root}
+            style={{padding: 0}}
+            icon={<GitHubIcon/>}
+            component={Link} href={"https://github.com/johannes117/"} target="_blank"
+            />
+            <BottomNavigationAction
+            className={classes.root}
+            style={{padding: 0}}
+            icon={<Instagram/>}
+            component={Link} href={"https://www.instagram.com/johannes_duplessis/"} target="_blank"
+            />
+        </BottomNavigation>
         <Copyright />
       </footer>
       {/* End footer */}
     </React.Fragment>
   );
 }
+

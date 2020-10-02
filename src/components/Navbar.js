@@ -119,11 +119,9 @@ const toggleSlider = (slider, open) => () => {
                     <IconButton onClick={toggleSlider("right", true)}>
                         <MenuIcon style={{color: "white", fontSize: "40" }}/>
                     </IconButton>
-                    
                         <Button className={classes.button} variant = "subtitle1" style = {{color: "white"}} component={Link} to ={"/"}>
                         Portfolio
                         </Button>
-                        
                         <MobilRightMenuSlider anchor="left" open={state.right} onClose={toggleSlider("right", false)} >
                             {sideList("right")}
                             <Footer/>
