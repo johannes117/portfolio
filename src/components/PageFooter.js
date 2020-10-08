@@ -1,4 +1,6 @@
 import React from 'react'
+import CssBaseline from '@material-ui/core/CssBaseline'
+import Container from '@material-ui/core/Container'
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
@@ -25,12 +27,22 @@ function Copyright() {
     icon: {
       marginRight: theme.spacing(2),
     },
-    footer: {
-      backgroundColor: theme.palette.background.paper,
-      padding: theme.spacing(6),
-      
-    },
     root: {
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight: '100vh',
+    },
+    main: {
+      marginTop: theme.spacing(8),
+      marginBottom: theme.spacing(2),
+    },
+    footer: {
+      padding: theme.spacing(3, 2),
+      marginTop: 'auto',
+      backgroundColor:
+      theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
+    },
+    buttonnav: {
       "& .MuiBottomNavigationAction-root": {
           minWidth: 0,
           maxWidth: 250,
@@ -46,42 +58,45 @@ function Copyright() {
   
   }));
 
-export default function PageFooter() {
+  export default function PageFooter() {
     const classes = useStyles();
     return (
-        <div>
-            {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-              "Check out my Github or LinkedIn below!"
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-         Useful Links:
-        </Typography>
-        <BottomNavigation width="auto" >
-            <BottomNavigationAction
-            className={classes.root}
-            style={{padding: 0}}
-            icon={<LinkedInIcon/>}
-            component={Link} href={"https://www.linkedin.com/in/johannes117/"} target="_blank"
-            />
-            <BottomNavigationAction
-            className={classes.root}
-            style={{padding: 0}}
-            icon={<GitHubIcon/>}
-            component={Link} href={"https://github.com/johannes117/"} target="_blank"
-            />
-            <BottomNavigationAction
-            className={classes.root}
-            style={{padding: 0}}
-            icon={<Instagram/>}
-            component={Link} href={"https://www.instagram.com/johannes_duplessis/"} target="_blank"
-            />
-        </BottomNavigation>
-        <Copyright />
-      </footer>
-      {/* End footer */}
+        <div className={classes.root}>
+          <CssBaseline/>
+          <footer className={classes.footer}>
+            <Container component="main" className={classes.main} maxWidth="sm">
+              <Typography variant="h6" align="center" gutterBottom>
+                 "Check out my Github or LinkedIn below!"
+              </Typography>
+              <Typography variant="subtitle1" align="center" color="textSecondary" gutterBottom>
+                  Useful Links:
+              </Typography>
+              <BottomNavigation width="auto" >
+                <BottomNavigationAction
+                  className={classes.buttonnav}
+                  style={{padding: 0}}
+                  icon={<LinkedInIcon/>}
+                  component={Link} href={"https://www.linkedin.com/in/johannes117/"} target="_blank"
+                />
+                <BottomNavigationAction
+                  className={classes.buttonnav}
+                  style={{padding: 0}}
+                  icon={<GitHubIcon/>}
+                  component={Link} href={"https://github.com/johannes117/"} target="_blank"
+                />
+                <BottomNavigationAction
+                  className={classes.buttonnav}
+                  style={{padding: 0}}
+                  icon={<Instagram/>}
+                  component={Link} href={"https://www.instagram.com/johannes_duplessis/"} target="_blank"
+                />
+                </BottomNavigation>
+            </Container>
+            
+              <Container maxWidth="sm">
+                <Copyright />
+              </Container>
+            </footer>
         </div>
     )
 }
-
