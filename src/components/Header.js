@@ -3,6 +3,7 @@ import {makeStyles} from "@material-ui/core/styles"
 import { Typography, Avatar, Grid, Box} from '@material-ui/core';
 import avatar from "../circle-cropped.png";
 import Typed from "react-typed"
+import PageFooter from "./PageFooter"
 
 // CSS STYLESs
 const useStyles = makeStyles(theme=>({
@@ -34,6 +35,7 @@ const useStyles = makeStyles(theme=>({
 const Header = () => {
     const classes = useStyles()
     return (
+        <div>
         <Box className={classes.typedContainer}>
             <Grid container justify="center">
             <Avatar className={classes.avatar} src={avatar} alt= "Johannes du Plessis" />
@@ -50,7 +52,11 @@ const Header = () => {
                 loop
                 />
             </Typography>
+            
         </Box>
+        
+        </div>
+        
     );
 };
 

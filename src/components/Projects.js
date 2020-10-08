@@ -14,25 +14,8 @@ import Link from '@material-ui/core/Link';
 import project1 from "../applewatch1.jpg"
 import project2 from "../images/playground-07-desktop.jpg"
 import project3 from "../images/comingsoon.jpg"
-import {BottomNavigation, BottomNavigationAction} from "@material-ui/core";
-import Instagram from "@material-ui/icons/Instagram";
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import PageFooter from './PageFooter'
 
-
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Johannes du Plessis
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -62,27 +45,12 @@ const useStyles = makeStyles((theme) => ({
   cardContent: {
     flexGrow: 1,
   },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
-  },
+  
   gridcontainer:{
     maxWidth: "100%",
     background: "#222"
   }, 
-  root: {
-    "& .MuiBottomNavigationAction-root": {
-        minWidth: 0,
-        maxWidth: 250,
-    }, 
-    "& .MuiSvgIcon-root":{
-        fill: "black",
-        "&:hover": {
-            fill:"#38AECC",
-            fontSize: "1.8rem"
-        }
-    }
-  }
+
 
 }));
 
@@ -116,28 +84,6 @@ const cards = [
 },
 ];
 
-const ColorButton = withStyles((theme) => ({
-  root: {
-    color: "white",
-    backgroundColor: "#183446",
-    '&:hover': {
-      color: "#183446",
-      backgroundColor: "#38aecc",
-    },
-  },
-}))(Button);
-
-const ColorButton2 = withStyles((theme) => ({
-  root: {
-    color: "#183446",
-    
-    '&:hover': {
-      color: "#38aecc",
-      backgroundColor: "#222",
-      
-    },
-  },
-}))(Button);
 
 
 export default function Projects() {
@@ -199,37 +145,7 @@ export default function Projects() {
         </Container>
         
       </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-              "It always seems impossible, until it's done - Nelson Mandela"
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-         Useful Links:
-        </Typography>
-        <BottomNavigation width="auto" >
-            <BottomNavigationAction
-            className={classes.root}
-            style={{padding: 0}}
-            icon={<LinkedInIcon/>}
-            component={Link} href={"https://www.linkedin.com/in/johannes117/"} target="_blank"
-            />
-            <BottomNavigationAction
-            className={classes.root}
-            style={{padding: 0}}
-            icon={<GitHubIcon/>}
-            component={Link} href={"https://github.com/johannes117/"} target="_blank"
-            />
-            <BottomNavigationAction
-            className={classes.root}
-            style={{padding: 0}}
-            icon={<Instagram/>}
-            component={Link} href={"https://www.instagram.com/johannes_duplessis/"} target="_blank"
-            />
-        </BottomNavigation>
-        <Copyright />
-      </footer>
-      {/* End footer */}
+      <PageFooter/>
     </React.Fragment>
   );
 }
