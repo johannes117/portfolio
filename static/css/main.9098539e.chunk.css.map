@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,KACE,8FAAiF,CACjF,qBACF","file":"main.9098539e.chunk.css","sourcesContent":["body{\n  background: url(./images/playground-07-desktop.jpg) no-repeat center center fixed;\n  background-size: cover;\n}\n"]}

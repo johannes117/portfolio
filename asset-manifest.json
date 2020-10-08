@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.771c7a3a.chunk.css",
-    "main.js": "/portfolio/static/js/main.d49220e8.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.d49220e8.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.9098539e.chunk.css",
+    "main.js": "/portfolio/static/js/main.a021a2d2.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a021a2d2.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.aad75174.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.aad75174.js.map",
-    "static/js/2.c141df1b.chunk.js": "/portfolio/static/js/2.c141df1b.chunk.js",
-    "static/js/2.c141df1b.chunk.js.map": "/portfolio/static/js/2.c141df1b.chunk.js.map",
+    "static/js/2.dab5ccee.chunk.js": "/portfolio/static/js/2.dab5ccee.chunk.js",
+    "static/js/2.dab5ccee.chunk.js.map": "/portfolio/static/js/2.dab5ccee.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.e00cb4dca2881944cbad84f6bfb4e5ca.js": "/portfolio/precache-manifest.e00cb4dca2881944cbad84f6bfb4e5ca.js",
+    "precache-manifest.b8a864451dc8c15f528c582bc18048e2.js": "/portfolio/precache-manifest.b8a864451dc8c15f528c582bc18048e2.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.771c7a3a.chunk.css.map": "/portfolio/static/css/main.771c7a3a.chunk.css.map",
-    "static/js/2.c141df1b.chunk.js.LICENSE.txt": "/portfolio/static/js/2.c141df1b.chunk.js.LICENSE.txt",
+    "static/css/main.9098539e.chunk.css.map": "/portfolio/static/css/main.9098539e.chunk.css.map",
+    "static/js/2.dab5ccee.chunk.js.LICENSE.txt": "/portfolio/static/js/2.dab5ccee.chunk.js.LICENSE.txt",
     "static/media/applewatch1.jpg": "/portfolio/static/media/applewatch1.09323f5e.jpg",
     "static/media/circle-cropped.png": "/portfolio/static/media/circle-cropped.0d0a996f.png",
     "static/media/comingsoon.jpg": "/portfolio/static/media/comingsoon.729288de.jpg",
+    "static/media/javascript-fullstack.jpg": "/portfolio/static/media/javascript-fullstack.730958a2.jpg",
     "static/media/App.css": "/portfolio/static/media/playground-07-desktop.3cae2f9d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.aad75174.js",
-    "static/js/2.c141df1b.chunk.js",
-    "static/css/main.771c7a3a.chunk.css",
-    "static/js/main.d49220e8.chunk.js"
+    "static/js/2.dab5ccee.chunk.js",
+    "static/css/main.9098539e.chunk.css",
+    "static/js/main.a021a2d2.chunk.js"
   ]
 }
