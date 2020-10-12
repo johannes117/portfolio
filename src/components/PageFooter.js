@@ -30,10 +30,9 @@ function Copyright() {
     root: {
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh',
     },
     main: {
-      marginTop: theme.spacing(8),
+      marginTop: theme.spacing(1),
       marginBottom: theme.spacing(2),
     },
     footer: {
@@ -41,6 +40,11 @@ function Copyright() {
       marginTop: 'auto',
       backgroundColor:
       theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
+    },
+    bottomNavContainer: {
+      backgroundColor:
+      theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
+      width: "auto" 
     },
     buttonnav: {
       "& .MuiBottomNavigationAction-root": {
@@ -71,7 +75,7 @@ function Copyright() {
               <Typography variant="subtitle1" align="center" color="textSecondary" gutterBottom>
                   Useful Links:
               </Typography>
-              <BottomNavigation width="auto" >
+              <BottomNavigation className={classes.bottomNavContainer}>
                 <BottomNavigationAction
                   className={classes.buttonnav}
                   style={{padding: 0}}
