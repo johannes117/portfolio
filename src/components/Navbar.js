@@ -76,11 +76,11 @@ const menuItems = [
         listText: "Projects", 
         listPath: "/projects"
     },
-    {
-        listIcon: <ContactMail/>,
-        listText: "Contacts", 
-        listPath: "/contacts"
-    }
+    //{
+    //    listIcon: <ContactMail/>,
+    //    listText: "Contacts", 
+    //    listPath: "/contacts"
+    //}
 ]
 
 
