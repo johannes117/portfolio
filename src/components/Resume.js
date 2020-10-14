@@ -137,8 +137,8 @@ return (
           <main>
             <div className={classes.heroContent}>
                <Container maxWidth="sm">
-                <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-                  Resume
+                <Typography component="h1" variant="h1" align="center" style={{color: "#38AECC"}} gutterBottom>
+                  My Resume
                 </Typography>
                 <Typography variant="h5" align="center" color="textSecondary" paragraph>
                   Here is a timeline of all the jobs I've had so far. Each one has been an integral part of my growth. 

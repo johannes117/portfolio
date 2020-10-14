@@ -59,7 +59,7 @@ const cards = [
     listImage: project1,
     listText: "Aerabyte Fitness App", 
     listHeading: "Aerabyte Fitness App", 
-    listContent: "List Content", 
+    listContent: "Technologies Used: Swift, Firebase, WatchKit, HealthKit, Git", 
     listLink: "https://aerabyte.com",
     listLink2: "https://github.com/johannes117/Aerabyte"
   
@@ -68,16 +68,16 @@ const cards = [
   listImage: project2,
   listText: "Portfolio Website", 
   listHeading: "React Portfolio Website", 
-  listContent: "List Content", 
+  listContent: "Technologies Used: React, JavaScript, HTML, CSS, Git, Github", 
   listLink: "https://johannes117.github.io/portfolio/",
   listLink2: "https://github.com/johannes117/portfolio"
 
 },
 {
   listImage: project3,
-  listText: "Title", 
+  listText: "Coming Soon", 
   listHeading: "More Projects coming soon...", 
-  listContent: "List Content", 
+  listContent: "Check back soon for more projects!", 
   listLink: "https://johannes117.github.io/portfolio/",
   listLink2: "https://github.com/johannes117"
 
@@ -97,8 +97,8 @@ export default function Projects() {
         {/* Hero unit */}
         <div className={classes.heroContent}>
         <Container maxWidth="sm">
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Projects
+            <Typography component="h1" variant="h1" align="center" style={{color: "#38AECC"}} gutterBottom>
+             My Projects
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
               Here is where I display all of the projects that I am currently working on or have previously worked on. 

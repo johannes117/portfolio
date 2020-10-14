@@ -15,14 +15,14 @@ import {
     Divider, 
     List, 
     Box,
-    Button,
+    Typography,
    
 } from '@material-ui/core'
 import {
     AssignmentInd,
     Home, 
     Apps, 
-    ContactMail
+   // ContactMail
 } from '@material-ui/icons'
 import avatar from "../circle-cropped.png"
 
@@ -30,7 +30,7 @@ import avatar from "../circle-cropped.png"
 const useStyles = makeStyles(theme=> ({
  menuSliderContainer: {
      width: 250, 
-     background: "#183446", 
+     background: "#222", 
      height: "100%"
  }, 
  avatar: {
@@ -50,11 +50,8 @@ const useStyles = makeStyles(theme=> ({
     color: "white"
  }, 
  listIcon: {
-     color: "white"
+     color: "#38AECC"
  }, 
- button: {
-    
- },
 
 
 }));
@@ -114,14 +111,14 @@ const toggleSlider = (slider, open) => () => {
     return (
         <>
         <Box component = "nav" >
-            <AppBar position="static" style={{background: "#183446"}}>
+            <AppBar position="static" style={{background: "#222"}}>
                 <Toolbar>
                     <IconButton onClick={toggleSlider("right", true)}>
-                        <MenuIcon style={{color: "white", fontSize: "40" }}/>
+                        <MenuIcon style={{color: "#38AECC", fontSize: "40" }}/>
                     </IconButton>
-                        <Button className={classes.button} variant = "subtitle1" style = {{color: "white"}} component={Link} to ={"/"}>
-                        Portfolio
-                        </Button>
+                        <Typography variant = "h5" style = {{color: "white"}} >
+                        Developer Portfolio
+                        </Typography>
                         <MobilRightMenuSlider anchor="left" open={state.right} onClose={toggleSlider("right", false)} >
                             {sideList("right")}
                             <Footer/>
