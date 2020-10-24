@@ -61,7 +61,7 @@ const cards = [
     listHeading: "Aerabyte Fitness App", 
     listContent: "Technologies Used: Swift, Firebase, WatchKit, HealthKit, Git", 
     listLink: "https://aerabyte.com",
-    listLink2: "https://github.com/johannes117/Aerabyte"
+    listLink2: "https://github.com/johannes117/AerabyteFitnessTracker"
   
 },
 {
@@ -69,7 +69,7 @@ const cards = [
   listText: "Portfolio Website", 
   listHeading: "React Portfolio Website", 
   listContent: "Technologies Used: React, JavaScript, HTML, CSS, Git, Github", 
-  listLink: "https://johannes117.github.io/portfolio/",
+  listLink: "https://johannesduplessis.tech",
   listLink2: "https://github.com/johannes117/portfolio"
 
 },
