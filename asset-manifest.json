@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.47f52639.chunk.css",
-    "main.js": "/static/js/main.db9faf70.chunk.js",
-    "main.js.map": "/static/js/main.db9faf70.chunk.js.map",
+    "main.js": "/static/js/main.59586377.chunk.js",
+    "main.js.map": "/static/js/main.59586377.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4e7c19c6.js",
     "runtime-main.js.map": "/static/js/runtime-main.4e7c19c6.js.map",
     "static/js/2.89e211d1.chunk.js": "/static/js/2.89e211d1.chunk.js",
     "static/js/2.89e211d1.chunk.js.map": "/static/js/2.89e211d1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e749e1532fb8b691f8a2ce1a4fb974c2.js": "/precache-manifest.e749e1532fb8b691f8a2ce1a4fb974c2.js",
+    "precache-manifest.59ce753a18eea087dc96e4c81a90b168.js": "/precache-manifest.59ce753a18eea087dc96e4c81a90b168.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.47f52639.chunk.css.map": "/static/css/main.47f52639.chunk.css.map",
     "static/js/2.89e211d1.chunk.js.LICENSE.txt": "/static/js/2.89e211d1.chunk.js.LICENSE.txt",
     "static/media/applewatch1.jpg": "/static/media/applewatch1.09323f5e.jpg",
-    "static/media/circle-cropped.png": "/static/media/circle-cropped.0d0a996f.png",
+    "static/media/circle-cropped.png": "/static/media/circle-cropped.56daf41f.png",
     "static/media/comingsoon.jpg": "/static/media/comingsoon.729288de.jpg",
     "static/media/App.css": "/static/media/playground-07-desktop.3cae2f9d.jpg"
   },
@@ -21,6 +21,6 @@
     "static/js/runtime-main.4e7c19c6.js",
     "static/js/2.89e211d1.chunk.js",
     "static/css/main.47f52639.chunk.css",
-    "static/js/main.db9faf70.chunk.js"
+    "static/js/main.59586377.chunk.js"
   ]
 }
