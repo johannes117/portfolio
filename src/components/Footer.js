@@ -4,7 +4,7 @@ import {BottomNavigation, BottomNavigationAction} from "@material-ui/core";
 import Instagram from "@material-ui/icons/Instagram";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import { Link } from "react-router-dom";
+import Link from "@material-ui/core/Link";
 
 const useStyles = makeStyles({
     root: {
@@ -33,22 +33,20 @@ const Footer = () => {
             className={classes.root}
             style={{padding: 0}}
             icon={<LinkedInIcon/>}
-            component={Link} href={"https://google.com"} target="_blank"
+            component={Link} href={"https://www.linkedin.com/in/johannes117/"} target="_blank"
             />
             <BottomNavigationAction
             className={classes.root}
             style={{padding: 0}}
             icon={<GitHubIcon/>}
+            component={Link} href={"https://github.com/johannes117/"} target="_blank"
             />
             <BottomNavigationAction
             className={classes.root}
             style={{padding: 0}}
             icon={<Instagram/>}
+            component={Link} href={"https://www.instagram.com/johannes_duplessis/"} target="_blank"
             />
-            
-
-
-            
         </BottomNavigation>
     )
 }
