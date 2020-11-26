@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.47f52639.chunk.css",
-    "main.js": "/static/js/main.59586377.chunk.js",
-    "main.js.map": "/static/js/main.59586377.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4e7c19c6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4e7c19c6.js.map",
-    "static/js/2.89e211d1.chunk.js": "/static/js/2.89e211d1.chunk.js",
-    "static/js/2.89e211d1.chunk.js.map": "/static/js/2.89e211d1.chunk.js.map",
+    "main.css": "/static/css/main.4abf8596.chunk.css",
+    "main.js": "/static/js/main.6d8af8c1.chunk.js",
+    "main.js.map": "/static/js/main.6d8af8c1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.40473344.js",
+    "runtime-main.js.map": "/static/js/runtime-main.40473344.js.map",
+    "static/js/2.f7c446e9.chunk.js": "/static/js/2.f7c446e9.chunk.js",
+    "static/js/2.f7c446e9.chunk.js.map": "/static/js/2.f7c446e9.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.59ce753a18eea087dc96e4c81a90b168.js": "/precache-manifest.59ce753a18eea087dc96e4c81a90b168.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.47f52639.chunk.css.map": "/static/css/main.47f52639.chunk.css.map",
-    "static/js/2.89e211d1.chunk.js.LICENSE.txt": "/static/js/2.89e211d1.chunk.js.LICENSE.txt",
-    "static/media/applewatch1.jpg": "/static/media/applewatch1.09323f5e.jpg",
-    "static/media/circle-cropped.png": "/static/media/circle-cropped.56daf41f.png",
-    "static/media/comingsoon.jpg": "/static/media/comingsoon.729288de.jpg",
-    "static/media/App.css": "/static/media/playground-07-desktop.3cae2f9d.jpg"
+    "static/css/main.4abf8596.chunk.css.map": "/static/css/main.4abf8596.chunk.css.map",
+    "static/js/2.f7c446e9.chunk.js.LICENSE.txt": "/static/js/2.f7c446e9.chunk.js.LICENSE.txt",
+    "static/media/applewatch1.9940a58d.jpg": "/static/media/applewatch1.9940a58d.jpg",
+    "static/media/circle-cropped.8ca422cf.png": "/static/media/circle-cropped.8ca422cf.png",
+    "static/media/comingsoon.7a6cb5ae.jpg": "/static/media/comingsoon.7a6cb5ae.jpg",
+    "static/media/App.css": "/static/media/playground-07-desktop.74acdcec.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4e7c19c6.js",
-    "static/js/2.89e211d1.chunk.js",
-    "static/css/main.47f52639.chunk.css",
-    "static/js/main.59586377.chunk.js"
+    "static/js/runtime-main.40473344.js",
+    "static/js/2.f7c446e9.chunk.js",
+    "static/css/main.4abf8596.chunk.css",
+    "static/js/main.6d8af8c1.chunk.js"
   ]
 }
