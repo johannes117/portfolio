@@ -155,6 +155,24 @@ return (
                  <Typography 
                     variant="h2" 
                     className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
+                      2021
+                    </Typography>
+                    <Box component="div" className={classes.timeLineItem}>
+                      <Typography variant="h5" align="center" className={classes.subHeading}>
+                        Intern
+                      </Typography>
+                      <Typography variant="body1" align="center" style={{color: "#38AECC"}}>
+                        Infosys
+                      </Typography>
+                      <Typography variant="subtitle1" align="center" style={{color: "white"}}>
+                        Canberra, ACT
+                      </Typography>
+                    </Box>
+                    {/*End of Item */}
+                 {/*Start of Item */}
+                 <Typography 
+                    variant="h2" 
+                    className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
                       2020
                     </Typography>
                     <Box component="div" className={classes.timeLineItem}>
